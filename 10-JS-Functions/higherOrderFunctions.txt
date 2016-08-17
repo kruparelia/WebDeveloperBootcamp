@@ -1,0 +1,12 @@
+setInterval(function,interval)
+    this calls the function every intervall (in milliseconds)
+    
+clearInterval(whatever nuber was returned)
+    this stops the set interval
+    
+can put an anonymous function in setInterval
+
+setInterval(function(){
+    console.log("anon function);
+    console.log("This is awesome);
+}, 2000);

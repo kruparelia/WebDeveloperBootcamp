@@ -1,0 +1,101 @@
+Intro to arrays
+slides: http://webdev.slides.com/coltsteele/javascript-basics-20-61#/
+
+var friends = ["charlie", "liz", "david"];
+
+empty array
+    var array = [];
+
+friends[0] returns charlie;
+friends[1] returns liz
+
+can chage array
+friends[0] = "chuck" changes 0 index to chuck
+
+----------------------------------------------------------------------------
+Array Methods
+slides: http://webdev.slides.com/coltsteele/javascript-basics-20-21-62#/
+6 methods for arrays
+
+Push/pop
+    var colors = ["red", "orange", "yellow"];
+    
+    to add an element to the end of the array, use Push method
+    colors.push("green);
+        returns number of items in array
+    
+    to remove element last array, use Pop method
+    colors.pop();
+        returns last element
+        
+Shift/unshift
+
+    using colors:
+
+    unshift method adds item to front of array
+    colors.unshift("infrared");
+
+    shift method removes first item in array
+    colors.shift();
+        returns the first element
+
+IndexOf
+    find the index of an item in an array
+    
+    var friends = ["charlie", "liz", "david"];
+    
+    friends.indexOf("david");
+        returns 2
+    
+    if duplicates, it returns first element
+    
+    can use indexOf to see if element is not present
+        friends.indexOf("Kunal");
+            returns -1 if not found
+            
+    
+Slice
+    copy parts of array
+    
+    array.slice(starting index, ending index)
+    doesn't alter original array
+    
+    var fruits = ['banana', 'orange', 'lemon', 'apple', 'mango'];
+    
+    var citrus = fruits.slice(1,3)
+        citrus contains ['orange','lemon'];
+        
+    can also copy the whole array using slice, 
+    array.slice(); copys whole array (don't use index);
+    
+    
+    
+-------------------------------------------------------------------------
+    
+Array Iteratio
+slides: http://webdev.slides.com/coltsteele/javascript-basics-20-21-22-63#/2
+For Loop:
+    
+var colors = ["red", "orange", "yellow", "green"];
+    
+for(var i = 0; i < colors.length; i++){
+    console.log(colors[i]);
+}
+    
+ForEach for array
+array.forEach(someFunction)
+    pass in an anon function
+
+colors.forEach(function(color){
+    //color is a place holder, its an argument
+    console.log(color);
+});
+    
+    
+exercise:
+
+for(var i = 0; i > numbers.length; i++){
+    if(numbers[i] % 3 ===0){
+        console.log(numbers[i]);
+    }
+}
