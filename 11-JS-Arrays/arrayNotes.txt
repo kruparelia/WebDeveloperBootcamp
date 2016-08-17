@@ -30,7 +30,7 @@ Push/pop
         
 Shift/unshift
 
-    using colors:
+    using colors: asdf
 
     unshift method adds item to front of array
     colors.unshift("infrared");
