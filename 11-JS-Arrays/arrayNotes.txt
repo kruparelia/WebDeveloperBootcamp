@@ -69,6 +69,10 @@ Slice
     array.slice(); copys whole array (don't use index);
     
     
+SPlice
+    delete any part of index
+        array(index,# of items delete from that starting index)
+    
     
 -------------------------------------------------------------------------
     
