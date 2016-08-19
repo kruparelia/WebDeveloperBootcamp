@@ -1,0 +1,17 @@
+Intro to DOM:
+
+slides: http://webdev.slides.com/coltsteele/intro-to-the-dom-70#/
+
+**********************************************************************************************************
+
+Defining the DOM:
+slides: http://webdev.slides.com/coltsteele/intro-to-the-dom-70#/3
+
+DOM - Document Object Model
+    interface between JavaScript and HTML+CSS
+    use JS to make page interactive
+Each html tag is turned into a JavaScript object
+
+to see sites objects:
+
+console.dir(document);

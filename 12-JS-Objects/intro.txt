@@ -1,0 +1,87 @@
+example of object
+var person = {
+    name: "Travis", 
+    age: 21, 
+    city: "LA"
+};
+
+
+to retrieve data:
+console.log(person.name);
+    or
+    
+console.log(person["name"]);
+
+cannot use dot notation if property starts with number
+someObject.2blah -- invalid
+someObject["2blah"];
+
+dot notation doesnt work for property with space too
+
+bracket notation can be used to look up a variable
+i.e
+
+var str = "name";
+
+someObject.str -- doesn't look for name
+someObject[str] -- does evalluate str and looks for "name"
+
+Update data:
+using person object:
+person.age += 1;
+person.city = "london";
+
+different ways to create objects:
+
+var person = {};
+person.name = "travis";
+person.age = 21;
+person.city = "LA";
+
+do same as above
+
+last way:
+
+var person = new Object();
+then add propertys like: person.age = 21;
+
+objects can hold arrays and other objects. i.e
+
+var object = {
+    age: 57, 
+    color: "purple", 
+    isHungry = true, 
+    friends: ["horatio", "hamlet"], 
+    pet: {
+        name: "rusty", 
+        species: "Dog", 
+        age: 3 
+    }
+};
+
+***************************************************************************
+
+Exercise 1: which comands are valid
+var someObject = {};
+
+someObject._name = "Hedwig"; - Valid
+someObject.age = 6; - Valid
+
+var prop = "color";
+someObject[prop] = "red"; - Valid
+
+someObject.123 = true; - Invalid (cause for number we need square notation)
+
+Exercise 2: write code to retrieve "malfoy"
+
+var object = {
+    friends: [
+        {name: "Malfoy}, 
+        {name: "Crabbe}, 
+        {name: "Goyle}
+    ], 
+    color: "baby blue", 
+    isEvil: true
+};
+
+object.friends[0].name;
