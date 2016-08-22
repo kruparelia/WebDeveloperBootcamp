@@ -1,0 +1,52 @@
+----------------------------------------------------------------
+Select and manipulate
+
+select elements
+
+var h1 = document.querySelector("h1");
+
+h1.style.color = "pink";
+
+change colour of body
+
+var body = document.querySelector("body"); //select
+var isBlue = false;
+
+setInterval(function(){ //manipulate
+    if(isBlue){
+        body.style.background = "white"
+    } else{
+        body.style.background = "#3498db"
+    }
+    isBlue = !isBlue;
+}, 1000);
+
+
+---------------------------------------------------------------------------
+
+5 different methods to select:
+
+slides: http://webdev.slides.com/coltsteele/deck-30-71#/
+
+document.getElementById()
+    returns one element with matching ID
+    
+document.getElementsByClassName()
+    return a list of all elements on page with matching class name
+    to access specific element, use [];
+    
+document.getElementsByTagName("li");
+    return a list of all elements of a given tag name, like li or h1
+    similar to selecting class names
+    
+document.querySelector("#highlight");
+    returns the first element that matches a given css-style selector
+    can use this selector for ID and classes
+        but, it only selects the first class
+        ONLY RETURNS FIRST ELEMENT
+        useful for selecting body
+        
+document.querySelectorAll("h1");
+    returns alist of elements that matches a given css-style selector
+    instead of first element, it selects all elements on the page
+    
