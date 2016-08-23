@@ -50,3 +50,13 @@ document.querySelectorAll("h1");
     returns alist of elements that matches a given css-style selector
     instead of first element, it selects all elements on the page
     
+---------------------------------------------------------------------------------------
+
+exercises:
+
+4 ways to select p:
+
+var first = document.selectElementByID("first");
+var special = document.getElementByClassName("special")[0];
+var p = document.getElementsByTagName("p")[0];
+var pQuery = document.querySelector(#first");

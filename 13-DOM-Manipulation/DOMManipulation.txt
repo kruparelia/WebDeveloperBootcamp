@@ -1,0 +1,53 @@
+slides: http://webdev.slides.com/coltsteele/deck-30-31-72#/
+
+var tag = document.getElementById("highlight");
+
+tag.style.color = "blue";
+tag.style.border = "10px solid red";
+tag.style.fontSize = "70px";
+
+the above is not DRY
+
+so, we want to define a class in CSS sheet, then use JS to ad that element to the class i.e
+
+.some-class{
+    color:blue;
+    border: 10px solid red;
+}
+
+//Add a class to the selected element
+tag.classList.add("some-class");
+
+//remove a class
+tag.classList.remove("some-class");
+
+//togle a class
+tag.classList.toggle("some-class");
+
+--------------------------------------------------------------------------------------------------
+manipuate text and content (same slides as above)
+
+<p> This is an <strong>awesome</strong> paragraph </p>
+
+var tag = document.querySelector("p");
+
+tag.textContent
+//returns the text inbetween the element 
+
+tag.textContent = "blah bah";
+
+innerHTML
+    keeps all HTML containted in a given element, not just the text
+    so it keeps the strong tag there still when selecting
+    
+--------------------------------------------------------------------------------------------------
+
+Attributes
+
+a< href="google.com">LInk</a>
+var link = document.querySelector("a");
+getAttribute() reads the attribute
+setAttribute() writes a new attribute
+
+link.getAttribute("href");
+link.setAttribute("href", "www.dogs.com");
