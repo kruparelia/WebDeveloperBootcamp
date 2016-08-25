@@ -27,3 +27,5 @@ for(var i = 0; i < lis.length; i++){
         this.style.color = "pink";
     })
 }
+
+dont need touse anonymous function, can used a named function
