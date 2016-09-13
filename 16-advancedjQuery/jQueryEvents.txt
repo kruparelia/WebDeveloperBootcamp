@@ -1,0 +1,45 @@
+jQuery Events
+
+click()
+    quck and easy way to add click listeneer to one element or collection of elements
+    i.e $('#submit').click(function(){
+        console.log("another click");
+    });
+    
+    any button is clicked:
+    $('button').click(function(){
+        alert("Someone clicked a button");
+    })
+    
+    when using this, wrap it in jQuery selector
+    
+    i.e $("button").click(function(){
+        $(this).css("background", "pink");
+    });
+    
+    $('button').click(function(){
+        var text = $(this).text();
+        console.log("you clicked " + text);
+    });
+
+keypress()
+    add keypress listener using jQuery
+    triggered when someone types something on key board
+    triggered when inbetween keyup and keydown
+    $('#target').keypress(function(){
+        console.log("key pressed");
+    })
+    
+    only hit enter
+    $('#target').keypress(function(event){
+        console.log("event")
+        //this logs the event, find keyCode or which and use that code to do stuff
+        //enter is 13
+        if(event.keyCode(or which) === 13){
+            alert("You hit enter");
+        }
+    });
+    
+    
+keyup() - triggered when key is released
+keydown() - triggered when key is held

@@ -11,12 +11,41 @@ var styles = {
     border: "2px solid red"
 }
 
+use img:first-of-type for first image
+
+can also use .first()
+
+use $("img").last() to select last image
+
 
 -----------------------------
 
 jQuery Methods
 
-.text() - returns all the text content found in the element
-i.e $("h1").text(): - returns jQuery Methods
+.text() - returns all the text content found in the element, can also set new text
+i.e $("h1").text(): - returns text of h1
+$("h1").text("asdf") - changes text of h1 to 'asdf'
 
 .html() - gets the HTML contents of the first element or set the HTML content of matched element
+--same notation as above
+
+.attr() - attribute - gets the value of an attribute for the first element in a set of matdhed elements, or set one or more attributes for every matched element
+i.e $("#greatphoto").attr("title", "Photo by kelly clark");
+    this sets the title to new title above
+to get: ("#greatphoto).attr("src");
+    this returns src attribute
+
+.val() - helps extract value from input
+    get current value of input or set value of matched element
+    $("input").val() - gets value of input
+    $("input").val("Rusy Steele") - sets value of input to rusy steele
+        use setting of input for emptry strings
+        i.e $("input").val("");
+    --can also be used for dropdown menu
+    
+.addClass() - add specified class to each element
+    i.e $("p").addClass("myClass yourClass"); - adds two classes to p
+    
+.removeClass() - same as above, but removes the class
+
+.toggleClass() - toggles the class, either adds or removes it
