@@ -10,3 +10,10 @@ for (var i = 0; i < lis.length; i++) {
         this.classList.toggle("done");
     });
 }
+
+var change = document.getElementById("change");
+var asdf = document.getElementById("asdf");
+
+change.addEventListener("click", function(){
+    $("#asdf").toggle();
+})

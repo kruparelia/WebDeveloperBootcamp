@@ -1,0 +1,22 @@
+$("selector") - this is to select an element using an id, class, or just element
+to manipulate style: 
+use .css("type", "change");
+ex: $("#special").css("border", "2px solid red");
+
+can also define an object with mutiple styles, and pass that objet using .css function i.e
+
+var styles = {
+    color: "red", 
+    background: "pink", 
+    border: "2px solid red"
+}
+
+
+-----------------------------
+
+jQuery Methods
+
+.text() - returns all the text content found in the element
+i.e $("h1").text(): - returns jQuery Methods
+
+.html() - gets the HTML contents of the first element or set the HTML content of matched element
