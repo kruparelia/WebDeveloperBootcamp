@@ -43,3 +43,40 @@ keypress()
     
 keyup() - triggered when key is released
 keydown() - triggered when key is held
+
+on() - most common jQuery event listener
+    will use this most often
+    
+    Examples:
+    
+    $('#submit').on('click', function(){
+        console.log("button clicked!");
+    });
+    
+    $('button').on('dblclick', function(){
+        alert('double clicked');
+    });
+    
+    //drag start event
+    $('a').on('dragstart', function(){
+        console.log("drag started");
+    });
+    
+    //keypress
+    
+    $('input[type="text"]').on('keypress', function(){
+        alert("key pressed");
+    });
+    
+    //hover
+    
+    $('button').on('mouseenter', function(){
+        $(this).css("font-weight", "bold")
+    });
+    $('button').on('mouseleave', function(){
+        $(this).css("font-weight", "bold")
+    });
+    
+    
+    
+    

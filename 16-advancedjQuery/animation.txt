@@ -1,0 +1,38 @@
+jQuery effects and animations
+
+.fadeOut() - hide matched elements by fading them to transparent
+    can provide number of milliseconds - default is 400 (0.4 seconds);
+    can also provide slow, medium, fast, etc
+    
+    ex:
+    $('button').on("click", function(){
+        ('div').fadeOut();
+    });
+    
+    to delete the element after the fade:
+    
+    $('button').on("click", function(){
+        ('div').fadeOut(1000, function(){
+            $(this).remove();
+        });
+    });
+    
+.fadeIn() - go from display none to showing them on page
+    similar to fade out
+
+.fadeToggle() - knows if it needs to fade in or fade out
+
+******** sliding effects **********
+
+.slideDown() - animates the height of an element
+    slide down shows the element using a sliding animation
+
+$('button').on("click", function(){
+    ('div').slideDown();
+})
+
+.slideUp - same as above, but hides the element by sliding up
+
+.slideToggle - decides whether to slide up or slide down
+
+fading and sliding are most common animations
