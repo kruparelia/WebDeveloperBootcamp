@@ -11,6 +11,8 @@ var styles = {
     border: "2px solid red"
 }
 
+$('body').css(styles);
+
 use img:first-of-type for first image
 
 can also use .first()
@@ -49,3 +51,18 @@ to get: ("#greatphoto).attr("src");
 .removeClass() - same as above, but removes the class
 
 .toggleClass() - toggles the class, either adds or removes it
+
+.append() - adds HTML as the last child element of the selected element
+
+.prepend() - adds HTML at the beginning o seleected element - becomes first child
+
+.remove() - removes the selected element from the DOM
+
+.replaceWith() - is just what it sounds like
+    check API for more info
+    
+.each() - loop through selection of elements and erform tasks
+    - use .each on group of elements, create anonymous function to perform tasks
+    i.e $('img').each(function(){
+        alert('i found an image');
+    });

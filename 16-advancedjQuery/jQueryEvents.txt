@@ -76,7 +76,25 @@ on() - most common jQuery event listener
     $('button').on('mouseleave', function(){
         $(this).css("font-weight", "bold")
     });
+
+	or just use .hover() function
+		uses 2 arguments - $('selector').hover(function1, function2)
+			first function: runs when mouse is hovering element
+			second function runs when mouse leaves element
     
+    $('#menu').hover(
+        function(){
+            $('#submenu').show()
+        }, //end mouse over
+        function(){
+            $('#submenu').hide()
+        } //end mouseout
+    ); end hover
     
+    can also provide multiple events in one .on() event
+    i.e
+        $('selector').on('click keypress', function(){
+            //code to work on click or on key press
+        })
     
     
